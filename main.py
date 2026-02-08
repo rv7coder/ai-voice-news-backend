@@ -21,7 +21,7 @@ os.makedirs("audio", exist_ok=True)
 user_preferences = {}
 
 # Load AI model once at startup
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 # Data Models
 class NewsField(str, Enum):
